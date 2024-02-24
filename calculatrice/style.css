@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(46, 46, 46);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.container{
+    height: 40em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0.2em;
+}
+.button{
+    margin: 0.2em;
+    order: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #58595f;
+    border-radius: 50%;
+    color: #e5e5e6; 
+    font-size: 32px;
+    height: 120px;
+    width: 120px;
+    min-width: 120px;
+    transition: all 0.1s;
+}
+.nums{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#AC,#ad,#am,#ap,#at,#ax,#apr,#ae{
+    background-color: orange;
+}
+#a0{
+    border-radius: 15%/30%;
+    justify-content: start;
+    grid-column: 1 / span 2;
+    padding-left: 3em;
+
+}
+.display{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 30em;
+    height: 8em;
+}
+#area{
+    color: white;
+    font-size: 4em;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#area:focus-visible{
+    background: none;
+    border: none;
+}
+.button:hover{
+    box-shadow: 0px 0px 8px white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#amalia{
+    color: rgb(226, 222, 222);
+}
